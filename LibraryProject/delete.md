@@ -1,0 +1,9 @@
+from bookshelf.models import Book
+
+book.delete()
+
+books = Book.objects.all()
+if not books.exists():
+    print("Book deleted successfully!")
+else:
+    print("Deletion failed!")
